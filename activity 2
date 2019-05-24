@@ -1,0 +1,62 @@
+class Animal
+  @Name
+  @Species
+  @Weight
+
+ def initialize(nm, sp, wg)
+    @Name = nm
+    @Species = sp 
+    @Weight = wg
+  
+  end
+
+def name 
+  return @Name
+end
+
+def name=(nm)
+  @Name = name
+end
+
+def species 
+  return @Species
+end
+
+def species=(sp)
+  @Species = species
+end
+
+def weight
+  return @Weight
+end
+
+def weight=(wg)
+  @Weight = weight
+end
+
+end
+
+
+
+class Reptile < Animal
+  def initialize(ht, nm, sp, wg)
+    super(nm, sp, wg)
+    @Tail = ht
+  end
+
+  def tail
+    return @Tail
+  end
+
+  def tail=(ht)
+    @Tail = ht
+  end
+
+end
+
+zoo_animal = Animal.new(nm, sp, wg)
+zoo_reptile = Animal.new(nm, sp, wg)
+
+puts zoo_animal.name
+puts zoo_animal.name
+
